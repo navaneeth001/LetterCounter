@@ -22,6 +22,7 @@ namespace LengthHelperTests
         public void FindLength_WithNonEmptyString_ReturnsLength()
         {
             // Arrange
+
             LengthHelper lengthHelper = new LengthHelper();
 
             // Act
