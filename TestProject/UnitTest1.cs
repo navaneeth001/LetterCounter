@@ -21,8 +21,23 @@ namespace LengthHelperTests
         [Fact]
         public void FindLength_WithNonEmptyString_ReturnsLength()
         {
+
             // Arrange
 
+            LengthHelper lengthHelper = new LengthHelper();
+
+            // Act
+            int length = lengthHelper.FindLength("123");
+
+            // Assert
+            Assert.Equal(3, length);
+        }
+
+        [Fact]
+        public void FindLength_WithNonEmptylongString_ReturnsLength()
+        {
+
+            // Arrange
             LengthHelper lengthHelper = new LengthHelper();
 
             // Act
@@ -41,5 +56,7 @@ namespace LengthHelperTests
             // Act & Assert
             Assert.Throws<ArgumentNullException>(() => lengthHelper.FindLength(null));
         }
+
+
     }
 }
