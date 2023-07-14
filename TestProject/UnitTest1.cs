@@ -41,7 +41,7 @@ namespace LengthHelperTests
             LengthHelper lengthHelper = new LengthHelper();
 
             // Act
-            int length = lengthHelper.FindLength("123");
+            int length = lengthHelper.FindLength("123456789010");
 
             // Assert
             Assert.Equal(3, length);
