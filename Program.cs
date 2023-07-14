@@ -3,6 +3,7 @@ using System;
 
 namespace LengthHelperConsoleApp
 {
+
     class Program
     {
         static void Main(string[] args)
