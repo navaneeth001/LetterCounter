@@ -44,7 +44,7 @@ namespace LengthHelperTests
             int length = lengthHelper.FindLength("123456789010");
 
             // Assert
-            Assert.Equal(3, length);
+            Assert.Equal(12, length);
         }
 
         [Fact]
